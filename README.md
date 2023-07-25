@@ -1,4 +1,4 @@
-# NaverThirdPartyLogin
+# NMapsMap
 
 ## Overview
 
@@ -14,23 +14,25 @@ NAVER에서 SPM 지원 안 해줘서 내가 쓸려고 만든 패키지.
 ### Swift Package Manager
 
 ```swift
-.package(url: "https://github.com/jaemyeong/naveridlogin-sdk-ios-spm.git", .upToNextMajor(from: "4.1.5"))
+.package(url: "https://github.com/jaemyeong/NMapsMap.git", .upToNextMajor(from: "3.16.2"))
 ```
 
 ## Usage
 
 ```swift
-import NaverThirdPartyLogin
+import NMapsMap
 
-let connection = NaverThirdPartyLoginConnection.getSharedInstance()
+let mapView = NMFMapView()
 ```
+
 ## Documentation
 
-- [NaverThirdPartyLogin](https://developers.naver.com/docs/login/ios/)
+- [NMapsMap](https://navermaps.github.io/ios-map-sdk/reference/)
 
 ## References
 
-- [NaverThirdPartyLogin](https://github.com/naver/naveridlogin-sdk-ios)
+- [NMapsMap](https://github.com/navermaps/NMapsMap)
+- [NMapsGeometry](https://github.com/navermaps/NMapsGeometry)
 
 ## Author
 

@@ -3,20 +3,26 @@
 import PackageDescription
 
 let package = Package(
-    name: "NaverThirdPartyLogin",
+    name: "NMapsMap",
     products: [
         .library(
-            name: "NaverThirdPartyLogin",
+            name: "NMapsMap",
             targets: [
-                "NaverThirdPartyLogin",
+                "NMapsMap",
+                "NMapsGeometry",
             ]
         ),
     ],
     targets: [
         .binaryTarget(
-            name: "NaverThirdPartyLogin",
-            url: "https://github.com/jaemyeong/naveridlogin-sdk-ios-spm/releases/download/4.1.5/NaverThirdPartyLogin.xcframework.zip",
-            checksum: "43463dcfc323da9dc7afb0c472976e632822c47ead313382f098720869ce2b26"
+            name: "NMapsMap",
+            url: "https://github.com/jaemyeong/NMapsMap-SPM/releases/download/3.16.0/NMapsMap.xcframework.zip",
+            checksum: "efa36d05b32ec32eef6e26047d3830ace3906cd07e62a848ca9db59f02f0a2e4"
+        ),
+        .binaryTarget(
+            name: "NMapsGeometry",
+            url: "https://github.com/jaemyeong/NMapsGeometry/releases/download/1.0.1/NMapsGeometry.xcframework.zip",
+            checksum: "5b2440242ed4a7e18b941b4e491a8899e980a68a00a039323ca9c4ac5dd77613"
         ),
     ]
 )
