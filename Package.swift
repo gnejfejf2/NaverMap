@@ -1,23 +1,22 @@
-// swift-tools-version:5.3
+// swift-tools-version: 5.8
 
 import PackageDescription
 
 let package = Package(
-    name: "NMapsMap",
-    platforms: [
-        .iOS(.v9)
-    ],
+    name: "NaverThirdPartyLogin",
     products: [
         .library(
-            name: "NMapsMap",
-            targets: ["NMapsMap"]
-        )
+            name: "NaverThirdPartyLogin",
+            targets: [
+                "NaverThirdPartyLogin",
+            ]
+        ),
     ],
     targets: [
         .binaryTarget(
-            name: "NMapsMap",
-            url: "https://github.com/stleamist/NMapsMap-SwiftPM/releases/download/v3.11.0/NMapsMap.xcframework.zip",
-            checksum: "b6cf0c9468ba3dc7120e545f05fb9c13f64d5ad1b61ebd2268732ae47e45fb20"
-        )
+            name: "NaverThirdPartyLogin",
+            url: "https://github.com/jaemyeong/naveridlogin-sdk-ios-spm/releases/download/4.1.5/NaverThirdPartyLogin.xcframework.zip",
+            checksum: "43463dcfc323da9dc7afb0c472976e632822c47ead313382f098720869ce2b26"
+        ),
     ]
 )
